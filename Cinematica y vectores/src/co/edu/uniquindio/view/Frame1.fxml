@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controller.Controlador">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d7e0e8" height="80.0" layoutX="-5.0" layoutY="-2.0" strokeType="INSIDE" style="-fx-fill: #3c3c3c;" width="387.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6192739009857178" green="0.024853801354765892" blue="0.8947368264198303" opacity="0.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <TabPane fx:id="tab" layoutX="-6.0" layoutY="43.0" prefHeight="428.0" prefWidth="381.0" stylesheets="@../View/style.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Producto Vectorial">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="-2.0" prefHeight="39.0" prefWidth="122.0" text="Producto Vectorial" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="7.0" layoutY="30.0" prefHeight="14.0" prefWidth="387.0" />
+                        <Label layoutX="14.0" layoutY="44.0" prefHeight="68.0" prefWidth="361.0" text="El producto vectorial es un operación binaria en dos vectores en un espacio tridimensional euclidiano que resulta en otro vector que es perpendicular a los dos vectores de entrada. " textFill="#b6bfa8" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="129.0" prefHeight="27.0" prefWidth="78.0" text="Vector A:" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="179.0" prefHeight="27.0" prefWidth="78.0" text="Vector B:" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button id="glass" fx:id="btnAddVectorAVecto" layoutX="60.0" layoutY="236.0" mnemonicParsing="false" onAction="#crearVectorAProdVecto" stylesheets="@StyleButtons.css" text="Agregar Vector A">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button id="glass" fx:id="btnAddVectorBVecto" layoutX="236.0" layoutY="236.0" mnemonicParsing="false" onAction="#crearVectorBProdVecto" stylesheets="@StyleButtons.css" text="Agregar Vector B">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button id="glass" fx:id="btnCalProdVecto" layoutX="140.0" layoutY="294.0" mnemonicParsing="false" onAction="#calcularProductoVectorial" stylesheets="@StyleButtons.css" text="Calcular Producto">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <TextField fx:id="cmpIVectorA" layoutX="140.0" layoutY="130.0" prefHeight="25.0" prefWidth="26.0" />
+                        <Label layoutX="178.0" layoutY="132.0" text="i" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="cmpJVectorA" layoutX="201.0" layoutY="130.0" prefHeight="25.0" prefWidth="26.0" />
+                        <Label layoutX="234.0" layoutY="132.0" text="j" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="cmpKVectorA" layoutX="250.0" layoutY="130.0" prefHeight="25.0" prefWidth="26.0" />
+                        <Label layoutX="288.0" layoutY="132.0" text="k" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="cmpIVectorB" layoutX="140.0" layoutY="179.0" prefHeight="25.0" prefWidth="26.0" />
+                        <TextField fx:id="cmpJVectorB" layoutX="201.0" layoutY="179.0" prefHeight="25.0" prefWidth="26.0" />
+                        <TextField fx:id="cmpKVectorB" layoutX="250.0" layoutY="179.0" prefHeight="25.0" prefWidth="26.0" />
+                        <Label layoutX="180.0" layoutY="181.0" text="i" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="236.0" layoutY="182.0" text="j" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="288.0" layoutY="181.0" text="k" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Producto Punto">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="3.0" prefHeight="28.0" prefWidth="98.0" text="Producto Punto" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="28.0" prefHeight="6.0" prefWidth="381.0" />
+                        <Label layoutX="12.0" layoutY="34.0" prefHeight="60.0" prefWidth="357.0" text="El producto punto es una manera fundamental en la que podemos combinar dos vectores. De manera intuitiva, nos dice algo acerca de qué tanto apuntan dos vectores en la misma dirección" textAlignment="JUSTIFY" textFill="#b6bfa8" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <TabPane layoutX="12.0" layoutY="100.0" prefHeight="292.0" prefWidth="366.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Punto entre vectores">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="5.0" layoutY="21.0" prefHeight="27.0" prefWidth="78.0" text="Vector A:" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="5.0" layoutY="60.0" prefHeight="27.0" prefWidth="78.0" text="Vector B:" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Button id="glass" layoutX="44.0" layoutY="147.0" mnemonicParsing="false" onAction="#guardarVectorAPunto" stylesheets="@StyleButtons.css" text="Agregar Vector A">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                          <Button id="glass" layoutX="238.0" layoutY="147.0" mnemonicParsing="false" onAction="#guardarVectorBPunto" stylesheets="@StyleButtons.css" text="Agregar Vector B">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                          <Button id="glass" layoutX="129.0" layoutY="196.0" mnemonicParsing="false" onAction="#hacerProductoPunto" stylesheets="@StyleButtons.css" text="Calcular producto punto">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                          <TextField fx:id="txtVectorAPunto" layoutX="98.0" layoutY="22.0" prefHeight="25.0" prefWidth="252.0" />
+                                          <TextField fx:id="txtVectorBPunto" layoutX="98.0" layoutY="61.0" prefHeight="25.0" prefWidth="252.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Ángulo entre dos vectores">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="18.0" prefHeight="27.0" prefWidth="78.0" text="Vector A:" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="14.0" layoutY="63.0" prefHeight="27.0" prefWidth="78.0" text="Vector B:" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Button id="glass" layoutX="53.0" layoutY="132.0" mnemonicParsing="false" onAction="#guardarVectorAAngulo" stylesheets="@StyleButtons.css" text="Agregar Vector A">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                          <Button id="glass" layoutX="229.0" layoutY="132.0" mnemonicParsing="false" onAction="#guardarVectorBAngulo" stylesheets="@StyleButtons.css" text="Agregar Vector B">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                          <Button id="glass" layoutX="129.0" layoutY="186.0" mnemonicParsing="false" onAction="#calcularAnguloVectores" stylesheets="@StyleButtons.css" text="Calcular Ángulo">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                          <TextField fx:id="txtVectorAAngulo" layoutX="116.0" layoutY="19.0" prefHeight="25.0" prefWidth="235.0" />
+                                          <TextField fx:id="txtVectorBAngulo" layoutX="114.0" layoutY="64.0" prefHeight="25.0" prefWidth="235.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Cinemática">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="353.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="154.0" prefHeight="15.0" prefWidth="86.0" textFill="#d7e0e8">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="7.0" prefHeight="28.0" prefWidth="97.0" text="Cinemática" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="34.0" prefHeight="0.0" prefWidth="381.0" />
+                        <Label layoutX="10.0" layoutY="42.0" prefHeight="80.0" prefWidth="362.0" text="Rama de la mecánica que describe el movimiento de los objetos sólidos sin considerar las causas que lo originan (las fuerzas) y se limita, principalmente, al estudio de la trayectoria en función del tiempo." textAlignment="JUSTIFY" textFill="#b6bfa8" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <TabPane layoutX="11.0" layoutY="122.0" prefHeight="265.0" prefWidth="374.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="MRU">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="348.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="14.0" text="Distancia:" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="14.0" layoutY="60.0" text="Tiempo:" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Button id="glass" layoutX="132.0" layoutY="163.0" mnemonicParsing="false" onAction="#calcularVelocidad" stylesheets="@StyleButtons.css" text="Calcular Velocidad">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                          <TextField fx:id="txtCineDista" layoutX="96.0" layoutY="9.0" prefHeight="25.0" prefWidth="168.0" />
+                                          <TextField fx:id="txtCineTiempo" layoutX="96.0" layoutY="63.0" prefHeight="25.0" prefWidth="168.0" />
+                                          <Label layoutX="273.0" layoutY="14.0" text="Metros" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="273.0" layoutY="68.0" text="Segundos" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="MRUA">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="25.0" layoutY="24.0" prefHeight="15.0" prefWidth="22.0" text="Xo:" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtCinePoIni" layoutX="82.0" layoutY="19.0" prefHeight="25.0" prefWidth="106.0" />
+                                          <Label layoutX="25.0" layoutY="166.0" prefHeight="15.0" prefWidth="22.0" text="Vo:" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtCineVelIni" layoutX="82.0" layoutY="161.0" prefHeight="25.0" prefWidth="105.0" />
+                                          <Label layoutX="14.0" layoutY="73.0" prefHeight="15.0" prefWidth="44.0" text="Tiempo:" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtCineTiem" layoutX="82.0" layoutY="68.0" prefHeight="25.0" prefWidth="106.0" />
+                                          <Label layoutX="12.0" layoutY="118.0" prefHeight="15.0" prefWidth="70.0" text="Aceleración" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtCineAce" layoutX="82.0" layoutY="113.0" prefHeight="25.0" prefWidth="106.0" />
+                                          <Button id="glass" layoutX="256.0" layoutY="44.0" mnemonicParsing="false" onAction="#calcularPosicion" stylesheets="@StyleButtons.css" text="Calcular Posición" />
+                                          <Label layoutX="198.0" layoutY="24.0" prefHeight="15.0" prefWidth="50.0" text="Metros" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="198.0" layoutY="73.0" prefHeight="15.0" prefWidth="58.0" text="Segundos" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="198.0" layoutY="118.0" prefHeight="15.0" prefWidth="119.0" text="Metros / segundos^2" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="198.0" layoutY="166.0" prefHeight="15.0" prefWidth="98.0" text="Metros/Segundos" textFill="#b6bfa8">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Modulos">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="8.0" prefHeight="21.0" prefWidth="60.0" text="Modulo" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="7.0" layoutY="26.0" prefHeight="7.0" prefWidth="374.0" />
+                        <Label layoutX="11.0" layoutY="26.0" prefHeight="105.0" prefWidth="368.0" text="El módulo de un vector es la longitud de un segmento orientado en un espacio que está determinado por dos puntos y el orden de estos. En otras palabras, el módulo de un vector es la longitud entre el inicio y el final del vector, es decir, dónde empieza y dónde termina la flecha" textAlignment="JUSTIFY" textFill="#b6bfa8" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="154.0" prefHeight="27.0" prefWidth="78.0" text="Vector A:" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="199.0" layoutY="360.0" prefHeight="17.0" prefWidth="168.0" text="© José Alejandro Arias Pinzón" textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="9.0" layoutY="360.0" prefHeight="17.0" prefWidth="168.0" text="Física General " textFill="#b6bfa8">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button id="glass" layoutX="61.0" layoutY="245.0" mnemonicParsing="false" onAction="#guardarVectorModulo" stylesheets="@StyleButtons.css" text="Agregar Vector">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button id="glass" layoutX="209.0" layoutY="245.0" mnemonicParsing="false" onAction="#calcularModulo" stylesheets="@StyleButtons.css" text="Calcular Modulo">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <TextField fx:id="txtVectorModulo" layoutX="93.0" layoutY="155.0" prefHeight="25.0" prefWidth="275.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="112.0" layoutY="14.0" prefHeight="28.0" prefWidth="168.0" style="-fx-background-color: #3c3c3c;" text="Física General" textFill="#b6bfa8" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+package principal;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+
+public class ControladorVentana1 {
+	
+	@FXML
+	private TextField txtUsuario;
+	private PasswordField contrasenia;
+	
+	public void getTxtUsuario (ActionEvent e) {
+		contrasenia = new PasswordField();
+		contrasenia.setText("1234");
+		
+		if(txtUsuario.getText().toLowerCase().equals("admin")  && contrasenia.getText().equals("1234")) {
+			
+		}
+	}
+}

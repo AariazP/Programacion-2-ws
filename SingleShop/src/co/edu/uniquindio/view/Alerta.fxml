@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controller.AlertaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="244.0" stroke="BLACK" strokeType="INSIDE" width="509.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7773513793945312" green="0.062134504318237305" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color red="0.7773513793945312" green="0.062134504318237305" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3382888734340668" green="0.18073830008506775" blue="0.9078947305679321" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="lblTexto" layoutX="41.0" layoutY="46.0" prefHeight="144.0" prefWidth="250.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Open Sans" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="326.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tiendaLogo.png" />
+         </image>
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

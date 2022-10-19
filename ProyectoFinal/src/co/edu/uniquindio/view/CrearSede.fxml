@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controller.InputController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="180.0" stroke="TRANSPARENT" strokeType="INSIDE" width="492.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.26815301179885864" green="0.6122827529907227" blue="0.9342105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8815789222717285" green="0.11019736528396606" blue="0.11019736528396606" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="lblMensaje" layoutX="14.0" layoutY="29.0" prefHeight="100.0" prefWidth="235.0" />
+      <TextField fx:id="txtRespuesta" layoutX="279.0" layoutY="52.0" prefHeight="27.0" prefWidth="194.0" promptText="Escriba aquí..." />
+      <Button fx:id="btnGuardar" layoutX="404.0" layoutY="141.0" mnemonicParsing="false" onAction="#guardarInfo" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Guardar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

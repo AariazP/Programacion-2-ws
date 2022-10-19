@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controller.DialogoConfirmationController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="234.0" layoutX="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="504.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7773513793945312" green="0.062134504318237305" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color red="0.7773513793945312" green="0.062134504318237305" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3382888734340668" green="0.18073830008506775" blue="0.9078947305679321" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="lblTexto" layoutX="125.0" layoutY="14.0" prefHeight="76.0" prefWidth="240.0" textFill="WHITE">
+         <font>
+            <Font name="Open Sans" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </Label>
+      <Button fx:id="btnNo" layoutX="310.0" layoutY="132.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: Transparent; -fx-background-radius: 10; -fx-border-color: White; -fx-border-radius: 10;" text="No" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnSi" layoutX="65.0" layoutY="132.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: Transparent; -fx-background-radius: 10; -fx-border-color: White; -fx-border-radius: 10;" text="Sí" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

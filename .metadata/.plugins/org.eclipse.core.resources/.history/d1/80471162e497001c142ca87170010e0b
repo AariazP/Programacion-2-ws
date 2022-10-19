@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.ControladorVentana1">
+   <children>
+      <Label layoutX="24.0" layoutY="46.0" prefHeight="40.0" prefWidth="232.0" text="Tienda Uniquindio">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="115.0" text="Usuario">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsuario" layoutX="14.0" layoutY="151.0" prefHeight="33.0" prefWidth="231.0" promptText="Ingrese su usuario" style="-fx-padding: 0; -fx-background-insets: 0; -fx-background-color: #FFFFFF;">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="14.0" layoutY="201.0" text="Contraseña">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="psswrdContrasenia" layoutX="14.0" layoutY="224.0" prefHeight="33.0" prefWidth="231.0" promptText="Ingrese su Contraseña" style="-fx-padding: 0; -fx-background-insets: 0; -fx-background-color: #FFFFFF;">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="17.0" layoutY="346.0" prefHeight="40.0" prefWidth="245.0" text="© Create by Alejandro Arias Michael Aristizabal " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="308.0" layoutY="-2.0" prefHeight="406.0" prefWidth="292.0" style="-fx-background-color: #A8DC93;">
+         <children>
+            <ImageView fitHeight="214.0" fitWidth="185.0" layoutX="54.0" layoutY="83.0">
+               <image>
+                  <Image url="@../../../../../../Downloads/pngwing.com.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Line endX="228.0" endY="-43.0" layoutX="17.0" layoutY="227.0" startX="-3.0" startY="-43.0" />
+      <Line endX="228.0" endY="-54.0" layoutX="17.0" layoutY="311.0" startX="-3.0" startY="-54.0" />
+      <Button id="glass" layoutX="84.0" layoutY="290.0" mnemonicParsing="false" onAction="#getTxtUsuario" stylesheets="file:/C:/Users/Alejandro/Downloads/stylesheet.css" text="Iniciar Sesión">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

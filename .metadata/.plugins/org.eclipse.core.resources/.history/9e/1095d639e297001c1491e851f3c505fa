@@ -1,0 +1,85 @@
+package principal;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+public class Main extends Application {
+	
+	private Stage ventana; 
+	
+	
+	@Override
+    public void start(Stage ventana) {
+		this.ventana = ventana;
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("Ventana1.fxml"));
+			Scene scene = new Scene(root);
+			
+			InputStream inputStream;
+	        inputStream =  getClass().getResourceAsStream("/images/iconoApp.png");
+	        Image image = new Image(inputStream);
+			
+			
+			ventana.initStyle(StageStyle.UNDECORATED);
+			ventana.setTitle("Logistica");
+			ventana.getIcons().add(image);
+			ventana.setScene(scene);
+			ventana.centerOnScreen();
+			ventana.setResizable(false);
+			ventana.show();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+    public void cerrarVentana() {
+    	ventana.close();
+    }
+    
+    
+    @FXML
+	private TextField txtUsuario;
+	private PasswordField psswrdContrasenia = new PasswordField();
+	private Stage stage;
+	private Scene scene;
+	private Parent root;
+	
+	public void getTxtUsuario (ActionEvent e) throws IOException {
+		
+		
+		
+		if(txtUsuario.getText().toLowerCase().equals("admin") && !psswrdContrasenia.getText().equals("1234")) {
+			
+			root = FXMLLoader.load(getClass().getResource("Ventana2.fxml")); //Cargo ventana
+			stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+			scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+		}else {
+			System.out.println("Hola");
+		}
+			
+		
+	}
+}

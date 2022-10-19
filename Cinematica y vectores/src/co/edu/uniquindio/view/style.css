@@ -1,0 +1,160 @@
+#tab{
+	-fx-background-color:  #3c3c3c;
+}
+#rectangle1Agenda{
+	
+}
+
+#tab .tab:selected {
+	-fx-background-color:  #d7e0e8;
+}
+
+#tab .tab{
+	-fx-background-color: #3c3c3c;
+}
+#tab .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+#tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+#TblContactos {
+    -fx-base: #3c3c3c;
+    -fx-control-inner-background: #3c3c3c;
+    -fx-background-color: #3c3c3c;
+    -fx-padding: 0;
+}
+
+#TblContactos  .column-header-background {
+    -fx-background-color: transparent;
+}
+
+#TblContactos .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: Helvetica;
+    -fx-text-fill: #d7e0e8;
+    -fx-alignment: center-left;
+    -fx-font-weight: bold;
+    -fx-opacity: 1;
+}
+
+#TblContactos-cell:hover {
+    -fx-background-color: #9900ff;
+}
+
+#TblContactos .column-header, .table-view .filler {
+    -fx-border-color:#3c3c3c ;
+    -fx-border-width: 3 3 3 3;
+    -fx-border-insets: 0;
+}
+
+#tblGrupos {
+    -fx-base: #3c3c3c;
+    -fx-control-inner-background: #3c3c3c;
+    -fx-background-color: #3c3c3c;
+    -fx-padding: 0;
+}
+
+#tblGrupos  .column-header-background {
+    -fx-background-color: transparent;
+}
+
+#tblGrupos .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: Helvetica;
+    -fx-text-fill: #d7e0e8;
+    -fx-alignment: center-left;
+    -fx-font-weight: bold;
+    -fx-opacity: 1;
+}
+
+#tblGrupos-cell:hover {
+    -fx-background-color: #9900ff;
+}
+
+#tblGrupos .column-header, .table-view .filler {
+    -fx-border-color:#3c3c3c ;
+    -fx-border-width: 3 3 3 3;
+    -fx-border-insets: 0;
+}
+#tblCita {
+    -fx-base: #3c3c3c;
+    -fx-control-inner-background: #3c3c3c;
+    -fx-background-color: #3c3c3c;
+    -fx-padding: 0;
+}
+
+#tblCita  .column-header-background {
+    -fx-background-color: transparent;
+}
+
+#tblCita .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: Helvetica;
+    -fx-text-fill: #d7e0e8;
+    -fx-alignment: center-left;
+    -fx-font-weight: bold;
+    -fx-opacity: 1;
+}
+
+#tblCita-cell:hover {
+    -fx-background-color: #9900ff;
+}
+
+#tblCita .column-header, .table-view .filler {
+    -fx-border-color:#3c3c3c ;
+    -fx-border-width: 3 3 3 3;
+    -fx-border-insets: 0;
+}
+
+.dialog{
+  -fx-border-color:#3c3c3c;
+  -fx-border-width:0px;
+  -fx-background-color: #3c3c3c;
+ }
+
+/**Costumization of The Bar where the buttons are located**/
+.dialog  .button-bar  .container {
+  -fx-background-color:#3c3c3c;
+}
+
+.dialog  .content.label {
+   -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+   -fx-background-color: #3c3c3c;
+   -fx-text-fill:black;
+   -fx-font-size:15.0px;
+}
+
+/**Costumization of DialogPane Header**/
+.dialog:header .header-panel {
+  -fx-background-color: #3c3c3c;
+}
+
+.dialog:header .header-panel .label{
+  -fx-background-color: #3c3c3c;
+  -fx-background-radius:10px;
+  /**no */
+  -fx-font-family: "Courier now";
+  -fx-text-fill:white;
+  -fx-font-size:15.0px;
+}
+
+
+/**Costumization of Buttons**/
+.dialog .button{
+   -fx-background-color:#3c3c3c;
+   -fx-text-fill:white;
+   -fx-wrap-text: true;
+   -fx-effect: dropshadow( three-pass-box, white, 10.0, 0.0, 0.0, 0.0);
+   -fx-cursor:hand;
+ }
+
+.dialog .button:hover{     
+  -fx-background-color:#3c3c3c;
+  -fx-text-fill:black;
+  -fx-font-weight:bold; 
+ }
+ 

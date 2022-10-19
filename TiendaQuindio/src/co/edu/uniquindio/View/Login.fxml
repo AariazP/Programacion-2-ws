@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="887.0" style="-fx-background-color: F76155;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controller.ControllerLogin">
+   <children>
+      <BorderPane prefHeight="492.0" prefWidth="887.0">
+         <center>
+            <VBox prefHeight="241.0" prefWidth="487.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label graphicTextGap="50.0" prefHeight="48.0" prefWidth="162.0" style="-fx-background-color: #DF493D; -fx-background-radius: 5;" text="Iniciar sesión" textFill="#fffbfb">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="45.0" prefWidth="82.0" style="-fx-background-color: #DF493D; -fx-background-radius: 10;" text="Usuario:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtUsuario" prefHeight="20.0" prefWidth="400.0" promptText="Escriba aquí:" style="-fx-border-width: 0; -fx-background-color: #DF493D;">
+                     <VBox.margin>
+                        <Insets left="10.0" right="50.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label layoutX="20.0" layoutY="68.0" prefHeight="45.0" prefWidth="99.0" style="-fx-background-color: #DF493D; -fx-background-radius: 10;" text="Contraseña:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtContraseña" promptText="Escriba aquí" style="-fx-background-color: #DF493D; -fx-border-width: 0;">
+                     <VBox.margin>
+                        <Insets left="10.0" right="50.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Open Sans" size="12.0" />
+                     </font>
+                  </TextField>
+                  <VBox prefHeight="166.0" prefWidth="487.0">
+                     <children>
+                        <Button fx:id="btnIngresar" mnemonicParsing="false" onAction="#ingresarUsuario" prefHeight="15.0" prefWidth="100.0" stylesheets="@application.css" text="Ingresar" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="180.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #DF493D; -fx-background-radius: 5;" text="¿Eres admin?" textFill="WHITE">
+                           <font>
+                              <Font name="Open Sans" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="170.0" top="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Button fx:id="btnAdmin" mnemonicParsing="false" onAction="#IngresarAdmin" prefHeight="25.0" prefWidth="101.0" stylesheets="@application.css" text="Click aquí" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="180.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#df493d" height="405.0" stroke="TRANSPARENT" strokeType="INSIDE" width="195.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#de493e" height="402.0" stroke="#00000001" strokeType="INSIDE" width="200.0" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <HBox prefHeight="87.0" prefWidth="887.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label graphicTextGap="50.0" prefHeight="53.0" prefWidth="493.0" text="Tienda Quindío" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="150.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="52.0" stylesheets="@application.css" text="X" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="230.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

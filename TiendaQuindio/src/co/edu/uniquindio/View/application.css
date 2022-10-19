@@ -1,0 +1,78 @@
+
+/** Css botones */
+.button{
+	-fx-background-color:  #F35144
+	-fx-background-radius 0em;
+	-fx-font-family: "Open sans"; 
+	-fx-cursor: "Hand";
+}
+.button-hover{
+	-fx-background-color:  #DF493D;
+}
+.button-pressed{
+	-fx-background-color: #DF493D;
+	
+}
+.button-focused{
+	-fx-background-color: #DF493D;
+	-fx-border-color: #f5f4f4;
+	-fx-border-width: 0.0px  0.0px 0.0px 3px;
+}
+/** Css tableView */
+
+.table-view{
+	-fx-background-color: #F54739;
+	-fx-background-radius: 50;
+}
+
+
+/** Css tabPane General */
+.tab-pane{
+	-fx-background-color: #f5f4f4;
+	-fx-background-radius: 10px, 10px, 10px 10px;
+	-fx-border-color: #DF493D;
+}
+
+.tab-pane>*.tab-header-area>*.tab-header-background{
+    -fx-background-color: -fx-outer-border, -fx-text-box-border, #DF493D;
+    -fx-border-color: #F54739;
+    
+}
+
+/**tamaño, bordes y color de fondo de los titulos*/
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #F54739;    
+    -fx-size: 20;
+    -fx-border-color: #F54739;
+    -fx-border-width: 0 1 3 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 10px, 10px, 10px, 10px;
+    -fx-text-fill:  #f5f4f4;
+}
+
+
+
+.table-view.colum-header .label{
+	-fx-text-fill: #f5f4f4;
+}
+
+/** Css de los tabs */
+.tab{
+	-fx-background-color:   #F35144;
+}
+.tab .tab:selected {
+	-fx-background-color:  #DF493D;
+}
+
+.tab .tab{
+	-fx-background-color: #DF493D;
+}
+.tab .tab-header-area .tab-header-background {
+    -fx-background-color: #F35144;
+}
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #f5f4f4;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}

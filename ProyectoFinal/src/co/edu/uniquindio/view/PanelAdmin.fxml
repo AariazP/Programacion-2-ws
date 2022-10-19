@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controller.paneAdminController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" stroke="BLACK" strokeType="INSIDE" width="1000.0">
+         <fill>
+            <LinearGradient endX="0.6872037914691943" endY="0.3222748815165877" startX="0.26066350710900477">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.13450291752815247" green="0.5469785332679749" blue="0.9078947305679321" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5643274784088135" green="0.17543859779834747" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="218.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9605262875556946" green="0.30238792300224304" blue="0.7959917187690735" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.32697367668151855" green="0.23355263471603394" blue="0.9342105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <ImageView fitHeight="90.0" fitWidth="110.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@profileAdmin.png" />
+         </image>
+      </ImageView>
+      <VBox layoutY="119.0" prefHeight="382.0" prefWidth="218.0" style="-fx-background-color: Transparent;">
+         <children>
+            <Line endX="117.5" startX="-100.0" />
+            <Button fx:id="btnPerfil" alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="47.0" prefWidth="218.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Perfil" textAlignment="CENTER" textFill="WHITE">
+               <graphic>
+                  <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../../../../../../TiendaQuindio/src/co/edu/uniquindio/View/perfil%20(1).png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Line endX="117.29289245605469" endY="0.2928932309150696" startX="-100.0" />
+            <Button fx:id="btnMovil" alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="47.0" prefWidth="218.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Movil" textFill="WHITE">
+               <graphic>
+                  <ImageView cache="true" fitHeight="25.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../../../../../../TiendaQuindio/src/co/edu/uniquindio/View/telefono-movil.png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnComputacional" alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="45.0" prefWidth="219.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Computacional" textFill="WHITE">
+               <graphic>
+                  <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../../../../../../TiendaQuindio/src/co/edu/uniquindio/View/ordenador-portatil.png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnMusica" alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="47.0" prefWidth="222.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Musica" textFill="WHITE">
+               <graphic>
+                  <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../../../../../../TiendaQuindio/src/co/edu/uniquindio/View/nota-musical.png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnHogar" alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="47.0" prefWidth="223.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Hogar" textFill="WHITE">
+               <graphic>
+                  <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../../../../../../TiendaQuindio/src/co/edu/uniquindio/View/casa.png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnEmpresarial" alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="47.0" prefWidth="219.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Empresarial" textFill="WHITE">
+               <graphic>
+                  <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../../../../../../TiendaQuindio/src/co/edu/uniquindio/View/grafico-empresarial.png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnEmpleado" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="47.0" prefWidth="218.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Empleados" textFill="WHITE">
+               <graphic>
+                  <ImageView cache="true" fitHeight="25.0" fitWidth="24.0" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@gerente.png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSedes" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="292.0" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="47.0" prefWidth="218.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Sedes" textFill="WHITE">
+               <graphic>
+                  <ImageView cache="true" fitHeight="25.0" fitWidth="24.0" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@tiendaLogo.png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnClientes" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="302.0" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="47.0" prefWidth="218.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Clientes" textFill="WHITE">
+               <graphic>
+                  <ImageView cache="true" fitHeight="30.0" fitWidth="31.0" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@clientesSingleShop.png" />
+                     </image>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Line endX="117.29289245605469" endY="0.2928932309150696" startX="-100.0" />
+            <Button fx:id="btnSignOut" mnemonicParsing="false" onAction="#volverLogin" prefHeight="47.0" prefWidth="218.0" style="-fx-background-color: Transparent;" stylesheets="@application.css" text="Sign out" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../TiendaQuindio/src/co/edu/uniquindio/View/cerrar-sesion.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Line endX="117.29289245605469" endY="0.2928932309150696" startX="-100.0" />
+         </children>
+      </VBox>
+      <StackPane layoutX="237.0" layoutY="12.0" prefHeight="578.0" prefWidth="752.0">
+         <children>
+            <Pane fx:id="paneMovil" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: White; -fx-background-radius: 10; -fx-border-radius: 10;" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="578.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="763.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6064327359199524" green="0.5614035129547119" blue="0.9473684430122375" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.5185185074806213" blue="0.959876537322998" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label layoutX="255.0" layoutY="14.0" prefHeight="38.0" prefWidth="324.0" style="-fx-background-color: Transparent; -fx-background-radius: 1; -fx-border-radius: 10; -fx-border-color: White; -fx-border-width: 1;" text="Panel de productos moviles" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Opciones de productos" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Productos en Stock" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <Line endX="656.0" layoutX="101.0" layoutY="74.0" startX="-107.0" />
+                  <Line endX="54.0" endY="397.0" layoutX="357.0" layoutY="181.0" startX="54.0" startY="-108.0" />
+                  <Line endX="643.0" layoutX="114.0" layoutY="163.0" startX="-120.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneComputacional" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: White; -fx-background-radius: 10; -fx-border-radius: 10;" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="578.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" width="763.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6064327359199524" green="0.5614035129547119" blue="0.9473684430122375" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.5185185074806213" blue="0.959876537322998" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label layoutX="255.0" layoutY="14.0" prefHeight="38.0" prefWidth="373.0" style="-fx-background-color: Transparent; -fx-background-radius: 1; -fx-border-radius: 10; -fx-border-color: White; -fx-border-width: 1;" text="Panel de productos computacionales" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Separator layoutY="159.0" prefHeight="3.0" prefWidth="752.0" visible="false" />
+                  <Label layoutX="60.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Opciones de productos" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Productos en Stock" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <Line endX="662.0" layoutX="95.0" layoutY="89.0" startX="-100.0" />
+                  <Line endX="34.0" endY="33.0" layoutX="369.0" layoutY="543.0" startX="34.0" startY="-455.0" />
+                  <Line endX="661.5" layoutX="95.0" layoutY="162.0" startX="-100.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneMusica" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: White; -fx-background-radius: 10; -fx-border-radius: 10;" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="578.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" width="763.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6064327359199524" green="0.5614035129547119" blue="0.9473684430122375" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.5185185074806213" blue="0.959876537322998" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label layoutX="255.0" layoutY="14.0" prefHeight="38.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-background-radius: 1; -fx-border-radius: 10; -fx-border-color: White; -fx-border-width: 1;" text="Panel de productos músicales" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Opciones de productos" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Productos en Stock" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <Line endX="662.0" layoutX="95.0" layoutY="85.0" startX="-100.0" />
+                  <Line endX="-8.0" endY="403.0" layoutX="416.0" layoutY="175.0" startX="-8.0" startY="-91.0" />
+                  <Line endX="425.0" layoutX="332.0" layoutY="168.0" startX="-338.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneHogar" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: White; -fx-background-radius: 10; -fx-border-radius: 10;" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="578.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" width="763.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6064327359199524" green="0.5614035129547119" blue="0.9473684430122375" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.5185185074806213" blue="0.959876537322998" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label layoutX="255.0" layoutY="14.0" prefHeight="38.0" prefWidth="342.0" style="-fx-background-color: Transparent; -fx-background-radius: 1; -fx-border-radius: 10; -fx-border-color: White; -fx-border-width: 1;" text="Panel de productos para el hogar" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Opciones de productos" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Productos en Stock" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <Line endX="662.0" layoutX="95.0" layoutY="85.0" startX="-100.0" />
+                  <Line endX="-1.0" endY="405.0" layoutX="404.0" layoutY="173.0" startX="-1.0" startY="-87.0" />
+                  <Line endX="662.0" layoutX="95.0" layoutY="165.0" startX="-100.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneEmpresarial" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: White; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="578.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" width="763.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6064327359199524" green="0.5614035129547119" blue="0.9473684430122375" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.5185185074806213" blue="0.959876537322998" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label layoutX="255.0" layoutY="14.0" prefHeight="38.0" prefWidth="342.0" style="-fx-background-color: Transparent; -fx-background-radius: 1; -fx-border-radius: 10; -fx-border-color: White; -fx-border-width: 1;" text="Panel de productos empresariales" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Opciones de productos" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Productos en Stock" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <Line endX="675.0" layoutX="82.0" layoutY="85.0" startX="-85.0" />
+                  <Line endX="-11.0" endY="435.0" layoutX="413.0" layoutY="143.0" startX="-11.0" startY="-58.0" />
+                  <Line endX="681.0" layoutX="76.0" layoutY="163.0" startX="-79.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneSedes" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: White; -fx-background-radius: 10; -fx-border-radius: 10;" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="578.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" width="763.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6064327359199524" green="0.5614035129547119" blue="0.9473684430122375" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.5185185074806213" blue="0.959876537322998" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label layoutX="60.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Opciones de sedes" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="112.0" prefHeight="38.0" prefWidth="263.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Sedes de la empresa" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <HBox layoutX="52.0" layoutY="224.0" prefHeight="99.0" prefWidth="324.0">
+                     <children>
+                        <VBox prefHeight="156.0" prefWidth="242.0">
+                           <children>
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="172.0" style="-fx-background-color: Transparent; -fx-background-radius: 1; -fx-border-radius: 10; -fx-border-color: White; -fx-border-width: 1;" text="Ciudad" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Georgia" size="16.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets right="20.0" top="25.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="40.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="156.0" prefWidth="239.0">
+                           <children>
+                              <TextField fx:id="txtCiudadSede" promptText="Escribe aquí..." style="-fx-border-radius: 10;">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HboxButtons1" layoutX="52.0" layoutY="384.0" prefHeight="80.0" prefWidth="324.0">
+                     <children>
+                        <VBox prefHeight="113.0" prefWidth="157.0">
+                           <children>
+                              <Button fx:id="btnCrearSede" mnemonicParsing="false" onAction="#actionsSedes" prefHeight="27.0" prefWidth="139.0" style="-fx-border-radius: 5; -fx-border-color: White; -fx-background-color: Transparent;" stylesheets="@application.css" text="Crear sede" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnUpdateSede" mnemonicParsing="false" onAction="#actionsSedes" prefHeight="27.0" prefWidth="139.0" style="-fx-border-radius: 5; -fx-border-color: White; -fx-background-color: Transparent;" stylesheets="@application.css" text="Actualizar sede" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="113.0" prefWidth="166.0">
+                           <children>
+                              <Button fx:id="btnReplaceSede" mnemonicParsing="false" onAction="#actionsSedes" prefHeight="27.0" prefWidth="139.0" style="-fx-border-radius: 5; -fx-border-color: White; -fx-background-color: Transparent;" stylesheets="@application.css" text="Reemplazar sede" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnDeleteSede" mnemonicParsing="false" onAction="#actionsSedes" prefHeight="27.0" prefWidth="139.0" style="-fx-border-radius: 5; -fx-border-color: White; -fx-background-color: Transparent;" stylesheets="@application.css" text="Eliminar sede" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label layoutX="323.0" layoutY="14.0" prefHeight="38.0" prefWidth="181.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Panel de sedes" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Line endX="662.0" layoutX="95.0" layoutY="85.0" startX="-100.0" />
+                  <Line endX="10.0" endY="397.0" layoutX="392.0" layoutY="181.0" startX="10.0" startY="-97.0" />
+                  <Line endX="662.0" layoutX="95.0" layoutY="167.0" startX="-100.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneEmpleado" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: White; -fx-background-radius: 10; -fx-border-radius: 10;" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="578.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" width="763.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6064327359199524" green="0.5614035129547119" blue="0.9473684430122375" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.5185185074806213" blue="0.959876537322998" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label layoutX="255.0" layoutY="14.0" prefHeight="38.0" prefWidth="324.0" style="-fx-background-color: Transparent; -fx-background-radius: 1; -fx-border-radius: 10; -fx-border-color: White; -fx-border-width: 1;" text="Panel de manejo de empleados" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Opciones de empleados" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="112.0" prefHeight="38.0" prefWidth="307.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Empleados en la empresa" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <TableView fx:id="tblEmpleados" layoutX="433.0" layoutY="176.0" prefHeight="382.0" prefWidth="307.0" style="-fx-background-color: Transparent;">
+                    <columns>
+                      <TableColumn fx:id="ColumnaNomEmpleado" prefWidth="156.0" text="Nombre" />
+                      <TableColumn fx:id="columnaCodEmpleado" prefWidth="150.0" text="Sueldo" />
+                    </columns>
+                  </TableView>
+                  <HBox layoutX="29.0" layoutY="195.0" prefHeight="157.0" prefWidth="324.0">
+                     <children>
+                        <VBox prefHeight="157.0" prefWidth="155.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Nombre" textFill="WHITE">
+                                 <font>
+                                    <Font name="Georgia" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Sueldo" textFill="WHITE">
+                                 <font>
+                                    <Font name="Georgia" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets right="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="48.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Rol" textFill="WHITE">
+                                 <font>
+                                    <Font name="Georgia" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets right="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="126.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Sede" textFill="WHITE">
+                                 <font>
+                                    <Font name="Georgia" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="157.0" prefWidth="173.0">
+                           <children>
+                              <TextField fx:id="txtNomEmpleado" prefHeight="36.0" prefWidth="171.0" promptText="Nombre del empleado" />
+                              <TextField fx:id="txtSueldoEmpleado" layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="171.0" promptText="Sueldo del empleado">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <ComboBox fx:id="cmbBoxRolEmpleado" prefHeight="36.0" prefWidth="173.0" promptText="Rol del empleado">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <ComboBox fx:id="comBoxSedeEmple" layoutX="10.0" layoutY="122.0" prefHeight="36.0" prefWidth="173.0" promptText="sede del empleado">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="29.0" layoutY="402.0" prefHeight="119.0" prefWidth="324.0">
+                     <children>
+                        <VBox prefHeight="119.0" prefWidth="170.0">
+                           <children>
+                              <Button fx:id="btnCrearEmpleado" mnemonicParsing="false" onAction="#actionsEmpleados" prefHeight="29.0" prefWidth="187.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Crear empleado" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Button>
+                              <Button fx:id="btnUpdateEmpleado" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionsEmpleados" prefHeight="29.0" prefWidth="187.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Actualizar empleado" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="119.0" prefWidth="155.0">
+                           <children>
+                              <Button fx:id="btnEliminarEmpleado" mnemonicParsing="false" onAction="#actionsEmpleados" prefHeight="29.0" prefWidth="187.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Eliminar empleado" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Button>
+                              <Button fx:id="btnReplaceEmpleado" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionsEmpleados" prefHeight="29.0" prefWidth="187.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Reemplazar empleado" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Line endX="656.0" layoutX="101.0" layoutY="84.0" startX="-107.0" />
+                  <Line endX="-1.0" endY="388.0" layoutX="384.0" layoutY="190.0" startX="-1.0" startY="-105.0" />
+                  <Line endX="425.0" layoutX="332.0" layoutY="162.0" startX="-338.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneClientes" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: White; -fx-background-radius: 10; -fx-border-radius: 10;" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="578.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" width="763.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6064327359199524" green="0.5614035129547119" blue="0.9473684430122375" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.5185185074806213" blue="0.959876537322998" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label layoutX="255.0" layoutY="14.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 1; -fx-border-radius: 10; -fx-border-color: White; -fx-border-width: 1;" text="Panel de manejo de clientes" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="112.0" prefHeight="38.0" prefWidth="242.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Opciones de clientes" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="112.0" prefHeight="38.0" prefWidth="283.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Clientes de la empresa" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <TableView fx:id="tblClientes" layoutX="433.0" layoutY="176.0" prefHeight="382.0" prefWidth="307.0" style="-fx-background-color: Transparent;">
+                     <columns>
+                        <TableColumn fx:id="colNomCliente" prefWidth="156.0" text="Cliente" />
+                        <TableColumn fx:id="colIDCliente" prefWidth="150.0" text="id" />
+                     </columns>
+                  </TableView>
+                  <VBox layoutX="78.0" layoutY="207.0" prefHeight="286.0" prefWidth="206.0">
+                     <children>
+                        <Button fx:id="btnClienteMasCompras" mnemonicParsing="false" onAction="#actionsCliente" prefHeight="29.0" prefWidth="205.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Ver cliente con mas compras" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnReporteFacturasPeriodo" mnemonicParsing="false" onAction="#actionsCliente" prefHeight="29.0" prefWidth="203.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Reporte de facturas en un perido" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnVerFacturasCliente" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionsCliente" prefHeight="29.0" prefWidth="211.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Ver facturas cliente" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnBuscarInfoCliente" mnemonicParsing="false" onAction="#actionsCliente" prefHeight="29.0" prefWidth="212.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Buscar información de un cliente" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnProdMasVendidos" layoutX="10.0" layoutY="206.0" mnemonicParsing="false" onAction="#actionsCliente" prefHeight="29.0" prefWidth="212.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Productos mas vendidos" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Line endX="656.0" layoutX="101.0" layoutY="84.0" startX="-107.0" />
+                  <Line endX="-1.0" endY="388.0" layoutX="384.0" layoutY="190.0" startX="-1.0" startY="-105.0" />
+                  <Line endX="425.0" layoutX="332.0" layoutY="162.0" startX="-338.0" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <TableView fx:id="tblGlobalProductos" layoutX="670.0" layoutY="200.0" prefHeight="382.0" prefWidth="307.0" style="-fx-background-color: Transparent;" visible="false">
+        <columns>
+          <TableColumn fx:id="columna2" prefWidth="94.0" text="Precio" />
+            <TableColumn fx:id="columna3" prefWidth="108.0" text="cantDisponible" />
+          <TableColumn fx:id="columna1" editable="false" prefWidth="104.0" text="Nombre" />
+        </columns>
+      </TableView>
+      <HBox fx:id="HboxTextFields" layoutX="280.0" layoutY="200.0" prefHeight="178.0" prefWidth="324.0">
+         <children>
+            <VBox prefHeight="232.0" prefWidth="169.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Nombre" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Descripción" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="Precio" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: Transparent; -fx-background-radius: 5; -fx-border-radius: 10; -fx-border-color: White;" text="cant. disponible" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="232.0" prefWidth="157.0">
+               <children>
+                  <TextField fx:id="txtNombreProducto" prefHeight="25.0" prefWidth="118.0" />
+                  <TextField fx:id="txtDescripcionProd" prefHeight="25.0" prefWidth="228.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtPrecioProd" prefHeight="25.0" prefWidth="228.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtCantProdDisponible" prefHeight="25.0" prefWidth="228.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox fx:id="HboxButtons" layoutX="251.0" layoutY="420.0" prefHeight="148.0" prefWidth="380.0">
+         <children>
+            <VBox prefHeight="111.0" prefWidth="326.0">
+               <children>
+                  <Button fx:id="btnCrearProd" mnemonicParsing="false" onAction="#actionsProductos" prefHeight="27.0" prefWidth="139.0" style="-fx-border-radius: 5; -fx-border-color: White; -fx-background-color: Transparent;" stylesheets="@application.css" text="Crear producto" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnUpdateProd" mnemonicParsing="false" onAction="#actionsProductos" prefHeight="27.0" prefWidth="139.0" style="-fx-border-radius: 5; -fx-border-color: White; -fx-background-color: Transparent;" stylesheets="@application.css" text="Actualizar producto" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnFechaProdMasVendidos" mnemonicParsing="false" onAction="#actionsCliente" prefHeight="27.0" prefWidth="252.0" style="-fx-border-radius: 5; -fx-border-color: White; -fx-background-color: Transparent;" stylesheets="@application.css" text="ver fecha donde mas se vendio" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="111.0" prefWidth="242.0">
+               <children>
+                  <Button fx:id="btnReplaceProd" mnemonicParsing="false" onAction="#actionsProductos" prefHeight="27.0" prefWidth="139.0" style="-fx-border-radius: 5; -fx-border-color: White; -fx-background-color: Transparent;" stylesheets="@application.css" text="Reemplazar producto" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnDeleteProd" mnemonicParsing="false" onAction="#actionsProductos" prefHeight="27.0" prefWidth="139.0" style="-fx-border-radius: 5; -fx-border-color: White; -fx-background-color: Transparent;" stylesheets="@application.css" text="Eliminar producto" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TableView fx:id="tblSedes" layoutX="680.0" layoutY="210.0" prefHeight="371.0" prefWidth="307.0" style="-fx-background-color: Transparent;" visible="false">
+         <columns>
+            <TableColumn fx:id="columnaCiudadSede" editable="false" prefWidth="165.0" text="Ciudad" />
+            <TableColumn fx:id="columnaIDSede" prefWidth="140.0" text="ID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

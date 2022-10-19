@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controller.UpdateAdminController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="500.0" stroke="TRANSPARENT" strokeType="INSIDE" width="437.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.11999999731779099" blue="0.3289208710193634" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.327850878238678" green="0.05701754242181778" blue="0.34210526943206787" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="135.0" layoutY="14.0" prefHeight="21.0" prefWidth="202.0" text="Actualizar administrador" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutY="51.0" prefHeight="0.0" prefWidth="437.0" />
+      <HBox layoutX="15.0" layoutY="65.0" prefHeight="371.0" prefWidth="408.0">
+         <children>
+            <VBox prefHeight="391.0" prefWidth="178.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="178.0" style="-fx-border-color: White; -fx-border-radius: 10;" text="Nombre" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="178.0" style="-fx-border-color: White; -fx-border-radius: 10;" text="Dirección" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="55.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="60.0" prefHeight="30.0" prefWidth="178.0" style="-fx-border-color: White; -fx-border-radius: 10;" text="Correo" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="55.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="110.0" prefHeight="30.0" prefWidth="178.0" style="-fx-border-color: White; -fx-border-radius: 10;" text="Fecha de nacimiento" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="160.0" prefHeight="30.0" prefWidth="178.0" style="-fx-border-color: White; -fx-border-radius: 10;" text="Usuario" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="55.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="210.0" prefHeight="30.0" prefWidth="178.0" style="-fx-border-color: White; -fx-border-radius: 10;" text="Contraseña" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="260.0" prefHeight="30.0" prefWidth="178.0" style="-fx-border-color: White; -fx-border-radius: 10;" text="Sede" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="108.0" prefHeight="30.0" prefWidth="178.0" style="-fx-border-color: White; -fx-border-radius: 10;" text="Sueldo" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="55.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="391.0" prefWidth="231.0">
+               <children>
+                  <TextField fx:id="txtNomAdmin" />
+                  <TextField fx:id="txtAdressAdmin" layoutX="10.0" layoutY="10.0">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtEmailAdmin" layoutX="10.0" layoutY="60.0">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="dateAdmin" prefHeight="25.0" prefWidth="232.0">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <TextField fx:id="txtUserAdmin" layoutX="10.0" layoutY="110.0">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="txtPasswordAdmin">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <ComboBox fx:id="comBoxSedeAdmin" prefHeight="25.0" prefWidth="232.0" style="-fx-background-color: White;">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="txtSueldoAdmin" layoutX="10.0" layoutY="285.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="btnAdmin" layoutX="264.0" layoutY="461.0" mnemonicParsing="false" onAction="#guardarDatosAdmin" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Actualizar administrador" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

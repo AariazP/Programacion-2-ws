@@ -1,0 +1,15 @@
+package poo.Arias.Exceptions;
+
+public class LecturaException extends CRUDExceptions {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public LecturaException(String mensaje) {
+		super(mensaje);
+		// TODO Auto-generated constructor stub
+	}
+
+}

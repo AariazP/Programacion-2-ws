@@ -1,0 +1,9 @@
+package clases;
+
+public class Empleado {
+	private String nombre, id, codigo, anios;
+	
+	public Empleado(String nombre, String id, String codigo, String anios) {
+		this.nombre=nombre;
+	}
+}

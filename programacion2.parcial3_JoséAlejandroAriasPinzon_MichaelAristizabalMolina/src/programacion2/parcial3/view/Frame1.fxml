@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="programacion2.parcial3.controller.ControllerFrame1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="489.0" stroke="BLACK" strokeType="INSIDE" width="538.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.1579856127500534" blue="0.11999999731779099" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.19736842811107635" green="0.11970029026269913" blue="0.11970029026269913" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="228.0" layoutY="14.0" prefHeight="26.0" prefWidth="83.0" style="-fx-border-radius: 10; -fx-border-color: White;" text="EDEQ" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Line endX="437.0" layoutX="101.0" layoutY="53.0" startX="-100.0" />
+      <Label layoutX="179.0" layoutY="76.0" prefHeight="26.0" prefWidth="198.0" style="-fx-border-radius: 10; -fx-border-color: White;" text="Opciones de factura" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <TableView fx:id="tblClientes" layoutX="29.0" layoutY="288.0" prefHeight="187.0" prefWidth="309.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="114.0" text="Nombre" />
+          <TableColumn fx:id="colCedula" prefWidth="75.0" text="Cedula" />
+            <TableColumn fx:id="colNit" prefWidth="118.0" text="NIT" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtFecha" layoutX="228.0" layoutY="119.0" prefHeight="25.0" prefWidth="132.0" promptText="Escriba aquí la fecha" />
+      <Label layoutX="53.0" layoutY="119.0" prefHeight="26.0" prefWidth="149.0" style="-fx-border-radius: 10; -fx-border-color: White;" text="Fecha de facturación" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="61.0" layoutY="186.0" prefHeight="26.0" prefWidth="118.0" style="-fx-border-radius: 10; -fx-border-color: White;" text="Total a pagar" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="txtTotalPagar" layoutX="228.0" layoutY="186.0" prefHeight="25.0" prefWidth="132.0" promptText="Escriba aquí el total" />
+      <Label layoutX="29.0" layoutY="232.0" prefHeight="26.0" prefWidth="98.0" style="-fx-border-radius: 10; -fx-border-color: White;" text="Clientes" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Line endX="437.0" layoutX="101.0" layoutY="273.0" startX="-100.0" />
+      <Line endX="437.0" layoutX="101.0" layoutY="222.0" startX="-100.0" />
+      <Button fx:id="btnBuscarCliente" layoutX="392.0" layoutY="368.0" mnemonicParsing="false" onAction="#buscarCliente" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Buscar cliente" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtIdCliente" layoutX="360.0" layoutY="310.0" promptText="Escriba el id del cliente" />
+      <Button fx:id="btnAddFactura" layoutX="407.0" layoutY="145.0" mnemonicParsing="false" onAction="#crearFactura" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Add factura" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

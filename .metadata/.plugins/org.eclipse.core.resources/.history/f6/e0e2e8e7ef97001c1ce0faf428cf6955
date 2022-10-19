@@ -1,0 +1,17 @@
+package clases;
+
+public class Producto {
+	 private String codigo, nombre; 
+		private int cntFact;
+
+	 /**
+	 * @param codigo
+	 * @param nombre
+	 * @param cntFact
+	 */
+	public Producto(String codigo, String nombre, int cntFact) {
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.cntFact = cntFact;
+	}
+}

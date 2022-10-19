@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.Controller.ControllerVista">
+   <children>
+      <BorderPane layoutX="-4.0" prefHeight="492.0" prefWidth="898.0">
+         <left>
+            <VBox prefHeight="419.0" prefWidth="149.0" style="-fx-background-color: #F35144;" BorderPane.alignment="CENTER">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="btnPerfil" alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="35.0" prefWidth="151.0" stylesheets="@application.css" text="Perfil" textFill="#fffafa">
+                     <graphic>
+                        <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@perfil%20(1).png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label prefHeight="30.0" prefWidth="152.0" text="Productos" textFill="#fffafa">
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@paquete%20(1).png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="btnMovil" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="35.0" prefWidth="151.0" stylesheets="@application.css" text="Movil" textFill="#fffafa">
+                     <graphic>
+                        <ImageView cache="true" fitHeight="25.0" fitWidth="24.0">
+                           <image>
+                              <Image url="@telefono-movil.png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnComputacional" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="45.0" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="35.0" prefWidth="151.0" stylesheets="@application.css" text="Computacional" textFill="#fffafa">
+                     <graphic>
+                        <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@ordenador-portatil.png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnMusica" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="80.0" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="35.0" prefWidth="151.0" stylesheets="@application.css" text="Musica" textFill="#fffafa">
+                     <graphic>
+                        <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@nota-musical.png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnHogar" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="115.0" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="35.0" prefWidth="151.0" stylesheets="@application.css" text="Hogar" textFill="#fffafa">
+                     <graphic>
+                        <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@casa.png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnEmpresarial" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="150.0" mnemonicParsing="false" onAction="#switchPanel" pickOnBounds="false" prefHeight="35.0" prefWidth="151.0" stylesheets="@application.css" text="Empresarial" textFill="#fffafa">
+                     <graphic>
+                        <ImageView cache="true" fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@grafico-empresarial.png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Sign out" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@cerrar-sesion.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="77.0" prefWidth="880.0" style="-fx-background-color: #F35144;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label graphicTextGap="10.0" prefHeight="91.0" prefWidth="129.0" textFill="WHITE">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="77.0" fitWidth="83.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@aparato-electrico%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label graphicTextGap="50.0" prefHeight="90.0" prefWidth="284.0" text="Tienda Quindío" textFill="#f5f4f4">
+                     <font>
+                        <Font name="Open Sans" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#salir" prefHeight="32.0" prefWidth="64.0" stylesheets="@application.css" text="x" textFill="#fff9f9">
+                     <HBox.margin>
+                        <Insets left="420.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Open Sans" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane prefHeight="418.0" prefWidth="743.0">
+                     <children>
+                        <Pane fx:id="panelPerfil" prefHeight="184.0" prefWidth="743.0" visible="false">
+                           <children>
+                              <TabPane layoutX="-1.0" layoutY="-5.0" prefHeight="418.0" prefWidth="744.0" stylesheets="@application.css" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="Sedes">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="394.0" prefWidth="744.0">
+                                             <children>
+                                                <BorderPane layoutY="-2.0" prefHeight="393.0" prefWidth="743.0" style="-fx-background-color: #F76155;">
+                                                   <left>
+                                                      <TableView fx:id="tblSedes" prefHeight="396.0" prefWidth="576.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+                                                        <columns>
+                                                          <TableColumn prefWidth="263.0" text="Ciudad" />
+                                                          <TableColumn prefWidth="312.0" text="Administrador" />
+                                                        </columns>
+                                                         <BorderPane.margin>
+                                                            <Insets bottom="10.0" left="10.0" top="10.0" />
+                                                         </BorderPane.margin>
+                                                      </TableView>
+                                                   </left>
+                                                   <center>
+                                                      <VBox prefHeight="400.0" prefWidth="167.0" BorderPane.alignment="CENTER">
+                                                         <children>
+                                                            <Button fx:id="btnAddSedes" mnemonicParsing="false" onAction="#agregarSede" prefHeight="34.0" prefWidth="138.0" stylesheets="@application.css" text="Agregar sede" textFill="#fffbfb">
+                                                               <font>
+                                                                  <Font name="Open Sans" size="12.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnDeleteSedes" mnemonicParsing="false" onAction="#eliminarSede" prefHeight="34.0" prefWidth="138.0" stylesheets="@application.css" text="Eliminar sede" textFill="WHITE">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" top="30.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnInfoSedes" mnemonicParsing="false" onAction="#obtenerInfoSede" prefHeight="34.0" prefWidth="138.0" stylesheets="@application.css" text="Info sede" textFill="#f5f5f5">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" top="30.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <ImageView fitHeight="109.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" top="30.0" />
+                                                               </VBox.margin>
+                                                               <image>
+                                                                  <Image url="@ubicacion.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets top="30.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </center>
+                                                   <top>
+                                                      <Label graphicTextGap="10.0" style="-fx-background-color: #DF493D; -fx-background-radius: 5;" text="Panel sedes" textFill="#fff6f6" BorderPane.alignment="CENTER">
+                                                         <font>
+                                                            <Font name="Open Sans" size="18.0" />
+                                                         </font>
+                                                         <BorderPane.margin>
+                                                            <Insets top="7.0" />
+                                                         </BorderPane.margin>
+                                                      </Label>
+                                                   </top>
+                                                </BorderPane>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Administradores">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <BorderPane layoutX="-1.0" prefHeight="392.0" prefWidth="745.0" style="-fx-background-color: #F76155;">
+                                                   <top>
+                                                      <Label contentDisplay="TEXT_ONLY" graphicTextGap="50.0" prefHeight="27.0" prefWidth="214.0" style="-fx-background-color: #DF493D; -fx-background-radius: 5;" text=" Panel de administradores" textFill="#fff4f4" BorderPane.alignment="CENTER">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                         <BorderPane.margin>
+                                                            <Insets bottom="5.0" top="5.0" />
+                                                         </BorderPane.margin>
+                                                         <graphic>
+                                                            <Button mnemonicParsing="false" text="Button" />
+                                                         </graphic>
+                                                      </Label>
+                                                   </top>
+                                                   <left>
+                                                      <TableView fx:id="tblAdmi" prefHeight="325.0" prefWidth="383.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+                                                        <columns>
+                                                          <TableColumn prefWidth="103.0" text="ID" />
+                                                          <TableColumn prefWidth="82.0" text="Nombre" />
+                                                            <TableColumn prefWidth="96.0" text="Direccion" />
+                                                            <TableColumn prefWidth="101.0" text="Correo" />
+                                                        </columns>
+                                                         <BorderPane.margin>
+                                                            <Insets bottom="30.0" left="30.0" />
+                                                         </BorderPane.margin>
+                                                      </TableView>
+                                                   </left>
+                                                   <center>
+                                                      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                                         <children>
+                                                            <Button fx:id="btnBuscarAdmin" mnemonicParsing="false" onAction="#buscarAdmin" prefHeight="40.0" prefWidth="270.0" stylesheets="@application.css" text="Buscar Administrador">
+                                                               <VBox.margin>
+                                                                  <Insets left="30.0" right="30.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnReemplazarContactos" mnemonicParsing="false" onAction="#replaceAdmin" prefHeight="40.0" prefWidth="270.0" stylesheets="@application.css" text="Reemplazar administrador">
+                                                               <VBox.margin>
+                                                                  <Insets left="30.0" right="30.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnEliminarAdmin" mnemonicParsing="false" onAction="#deleteAdmin" prefHeight="40.0" prefWidth="270.0" stylesheets="@application.css" text="Eliminar Adminstrador">
+                                                               <VBox.margin>
+                                                                  <Insets left="30.0" right="30.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnCrearAdmin" mnemonicParsing="false" onAction="#createAdmin" prefHeight="40.0" prefWidth="270.0" stylesheets="@application.css" text="Crear administrador">
+                                                               <VBox.margin>
+                                                                  <Insets left="30.0" right="30.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnActualizarAdmin" layoutX="40.0" layoutY="170.0" mnemonicParsing="false" onAction="#updateAdmin" prefHeight="40.0" prefWidth="270.0" stylesheets="@application.css" text="Actualizar administrador">
+                                                               <VBox.margin>
+                                                                  <Insets left="30.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <ImageView fitHeight="119.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="20.0" left="100.0" top="10.0" />
+                                                               </VBox.margin>
+                                                               <image>
+                                                                  <Image url="@administrador.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children>
+                                                      </VBox>
+                                                   </center>
+                                                </BorderPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab text="Clientes">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <BorderPane prefHeight="388.0" prefWidth="743.0" style="-fx-background-color: #F76155;">
+                                                   <top>
+                                                      <Label style="-fx-background-color: #DF493D; -fx-background-radius: 5;" text="Panel clientes" textFill="WHITE" BorderPane.alignment="CENTER">
+                                                         <font>
+                                                            <Font name="Open Sans" size="18.0" />
+                                                         </font>
+                                                         <BorderPane.margin>
+                                                            <Insets bottom="10.0" top="10.0" />
+                                                         </BorderPane.margin>
+                                                      </Label>
+                                                   </top>
+                                                   <left>
+                                                      <TableView fx:id="tblClientes" prefHeight="323.0" prefWidth="404.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+                                                        <columns>
+                                                          <TableColumn prefWidth="75.0" text="ID" />
+                                                            <TableColumn prefWidth="75.0" text="Nombre" />
+                                                            <TableColumn prefWidth="75.0" text="Direccion" />
+                                                            <TableColumn prefWidth="75.0" text="Correo" />
+                                                            <TableColumn prefWidth="102.0" text="Ciudad" />
+                                                        </columns>
+                                                         <BorderPane.margin>
+                                                            <Insets bottom="20.0" left="20.0" />
+                                                         </BorderPane.margin>
+                                                      </TableView>
+                                                   </left>
+                                                   <center>
+                                                      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                                         <children>
+                                                            <Button fx:id="BtnCrearCliente" mnemonicParsing="false" onAction="#createCliente" prefHeight="40.0" prefWidth="320.0" stylesheets="@application.css" text="Crear cliente" textFill="#fffefe">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" top="15.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnEliminarCliente" mnemonicParsing="false" onAction="#deleteCliente" prefHeight="40.0" prefWidth="320.0" stylesheets="@application.css" text="Eliminar cliente" textFill="#fff6f6">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnActualizarCliente" mnemonicParsing="false" onAction="#updateCliente" prefHeight="40.0" prefWidth="320.0" stylesheets="@application.css" text="Actualizar cliente" textFill="#fffbfb">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnClienteMasCompras" mnemonicParsing="false" onAction="#getClienteMasCompras" prefHeight="40.0" prefWidth="320.0" stylesheets="@application.css" text="Cliente con mas compras" textFill="#fff9f9">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnBuscarCliente" layoutX="20.0" layoutY="160.0" mnemonicParsing="false" onAction="#searchCliente" prefHeight="40.0" prefWidth="320.0" stylesheets="@application.css" text="Buscar cliente" textFill="#fff6f6">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnFacturasCliente" layoutX="20.0" layoutY="210.0" mnemonicParsing="false" onAction="#buscarFacturasCliente" prefHeight="40.0" prefWidth="320.0" stylesheets="@application.css" text="Facturas de un cliente" textFill="#fff6f6">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                         </children>
+                                                      </VBox>
+                                                   </center>
+                                                </BorderPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab text="Facturas">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <BorderPane prefHeight="390.0" prefWidth="746.0" style="-fx-background-color: #F76155;">
+                                                   <top>
+                                                      <Label style="-fx-background-color: #DF493D; -fx-background-radius: 5;" text="Panel Facturas" textFill="WHITE" BorderPane.alignment="CENTER">
+                                                         <font>
+                                                            <Font name="Open Sans" size="18.0" />
+                                                         </font>
+                                                         <BorderPane.margin>
+                                                            <Insets bottom="10.0" top="10.0" />
+                                                         </BorderPane.margin>
+                                                      </Label>
+                                                   </top>
+                                                   <left>
+                                                      <TableView fx:id="tblFacturas" prefHeight="325.0" prefWidth="378.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+                                                        <columns>
+                                                          <TableColumn prefWidth="75.0" text="Codigo" />
+                                                          <TableColumn prefWidth="75.0" text="Fecha" />
+                                                            <TableColumn prefWidth="75.0" text="IVA" />
+                                                            <TableColumn prefWidth="75.0" text="SubtTotal" />
+                                                            <TableColumn prefWidth="75.0" text="Total" />
+                                                        </columns>
+                                                         <BorderPane.margin>
+                                                            <Insets bottom="20.0" left="20.0" />
+                                                         </BorderPane.margin>
+                                                      </TableView>
+                                                   </left>
+                                                   <center>
+                                                      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                                         <children>
+                                                            <Button fx:id="btnReporteFacturas" mnemonicParsing="false" onAction="#obtenerReporteFacturas" prefHeight="40.0" prefWidth="380.0" stylesheets="@application.css" text="Reporte facturas" textFill="#f8f7f7">
+                                                               <VBox.margin>
+                                                                  <Insets left="10.0" right="10.0" top="30.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnProductoMasVendidoFecha" mnemonicParsing="false" onAction="#obtenerProductoMasVendido" prefHeight="40.0" prefWidth="380.0" stylesheets="@application.css" text="Producto mas vendido en una fecha" textFill="#f2ecec">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <Button fx:id="btnProductosMasVendidos" mnemonicParsing="false" onAction="#obtenerProductosMasVendidos" prefHeight="40.0" prefWidth="380.0" stylesheets="@application.css" text="Productos mas vendidos" textFill="#fcf8f8">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" left="10.0" right="10.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@factura.png" />
+                                                               </image>
+                                                               <VBox.margin>
+                                                                  <Insets left="90.0" />
+                                                               </VBox.margin>
+                                                            </ImageView>
+                                                         </children>
+                                                      </VBox>
+                                                   </center>
+                                                </BorderPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                </tabs>
+                                 <styleClass>
+                                    <String fx:value="tab-pane" />
+                                    <String fx:value="tab-header-area" />
+                                    <String fx:value="tab-header-area" />
+                                 </styleClass>
+                              </TabPane>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="panelMovil" prefHeight="137.0" prefWidth="248.0" style="-fx-background-color: #F76155;" visible="false">
+                           <children>
+                              <BorderPane prefHeight="419.0" prefWidth="745.0">
+                                 <top>
+                                    <Label graphicTextGap="50.0" style="-fx-background-color: #DF493D; -fx-background-radius: 5;" text="Panel productos moviles" textFill="WHITE" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Open Sans" size="18.0" />
+                                       </font>
+                                       <BorderPane.margin>
+                                          <Insets bottom="20.0" top="20.0" />
+                                       </BorderPane.margin>
+                                    </Label>
+                                 </top>
+                                 <left>
+                                    <TableView fx:id="tblProductosMoviles" prefHeight="374.0" prefWidth="268.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                        <TableColumn prefWidth="132.0" text="C1" />
+                                        <TableColumn prefWidth="135.0" text="C2" />
+                                      </columns>
+                                       <BorderPane.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </BorderPane.margin>
+                                    </TableView>
+                                 </left>
+                                 <center>
+                                    <VBox prefHeight="354.0" prefWidth="399.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button fx:id="btnEliminarProductoMovil" mnemonicParsing="false" onAction="#eliminarProductoMovil" prefHeight="40.0" prefWidth="300.0" text="EliminarProducto" textFill="#fffefe">
+                                             <VBox.margin>
+                                                <Insets bottom="30.0" left="50.0" right="30.0" top="70.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Open Sans" size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="btnCrearProductoMovil" mnemonicParsing="false" onAction="#crearProductoMovil" prefHeight="40.0" prefWidth="300.0" text="Crear producto" textFill="WHITE">
+                                             <font>
+                                                <Font name="Open Sans" size="18.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="30.0" left="50.0" right="30.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnReemplazarProductoMovil" mnemonicParsing="false" onAction="#reemplazarProductoMovil" prefHeight="40.0" prefWidth="300.0" text="Reemplazar producto" textFill="#fffefe">
+                                             <VBox.margin>
+                                                <Insets bottom="30.0" left="50.0" right="30.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="panelComputacional" prefHeight="200.0" prefWidth="200.0" />
+                        <Pane fx:id="panelMusica" prefHeight="200.0" prefWidth="200.0" visible="false">
+                           <children>
+                              <BorderPane prefHeight="415.0" prefWidth="752.0" style="-fx-background-color: #F76155;">
+                                 <top>
+                                    <Label style="-fx-background-color: #DF493D; -fx-background-radius: 5;" text="Panel productos Musica" textFill="WHITE" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Open Sans" size="18.0" />
+                                       </font>
+                                       <BorderPane.margin>
+                                          <Insets bottom="20.0" top="20.0" />
+                                       </BorderPane.margin>
+                                    </Label>
+                                 </top>
+                                 <left>
+                                    <TableView fx:id="tblProductosMusica" prefHeight="320.0" prefWidth="301.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                       <BorderPane.margin>
+                                          <Insets bottom="30.0" left="30.0" />
+                                       </BorderPane.margin>
+                                    </TableView>
+                                 </left>
+                                 <center>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button fx:id="btnCrearProductosMusica" maxHeight="40.0" maxWidth="300.0" mnemonicParsing="false" text="Crear producto" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="100.0" top="30.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="btnEliminarProductosMusica" maxHeight="40.0" maxWidth="300.0" mnemonicParsing="false" text="Eliminar producto" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="100.0" top="30.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="btnReemplazarProductosMusica" maxHeight="40.0" maxWidth="300.0" mnemonicParsing="false" text="Reemplazar producto" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="100.0" top="30.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Open Sans" size="18.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </center>
+                              </BorderPane>
+                           </children></Pane>
+                        <Pane fx:id="panelHogar" prefHeight="200.0" prefWidth="200.0" visible="false">
+                           <children>
+                              <BorderPane prefHeight="418.0" prefWidth="744.0" style="-fx-background-color: F76155;">
+                                 <top>
+                                    <Label text="Panel hogar" textFill="WHITE" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Open Sans" size="18.0" />
+                                       </font>
+                                       <BorderPane.margin>
+                                          <Insets top="20.0" />
+                                       </BorderPane.margin></Label>
+                                 </top>
+                                 <left>
+                                    <TableView fx:id="tblproductosHogar" prefHeight="343.0" prefWidth="252.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                        <TableColumn prefWidth="131.0" text="C1" />
+                                        <TableColumn prefWidth="118.0" text="C2" />
+                                      </columns>
+                                       <BorderPane.margin>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" />
+                                       </BorderPane.margin>
+                                    </TableView>
+                                 </left>
+                                 <center>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button fx:id="btnCrearProductoHogar" mnemonicParsing="false" onAction="#CrearProductohogar" prefHeight="40.0" prefWidth="300.0" text="Crear producto" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="100.0" top="30.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnEliminarProductoHogar" layoutX="110.0" layoutY="40.0" mnemonicParsing="false" onAction="#eliminarProductoHogar" prefHeight="40.0" prefWidth="300.0" text="Eliminar producto" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="100.0" top="30.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnReemplazarProductoHogar" layoutX="110.0" layoutY="110.0" mnemonicParsing="false" onAction="#reemplazarProductoHogar" prefHeight="40.0" prefWidth="300.0" text="Reeemplazar producto" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="100.0" top="30.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children></VBox>
+                                 </center>
+                              </BorderPane>
+                           </children></Pane>
+                        <Pane fx:id="panelEmpresarial" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="416.0" prefWidth="743.0" style="-fx-background-color: #F76155;">
+                                 <top>
+                                    <Label text="Panel empresarial" textFill="WHITE" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets bottom="20.0" top="10.0" />
+                                       </BorderPane.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </top>
+                                 <left>
+                                    <TableView fx:id="tblProductosEmpresarial" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                       <BorderPane.margin>
+                                          <Insets bottom="30.0" left="30.0" top="30.0" />
+                                       </BorderPane.margin>
+                                    </TableView>
+                                 </left>
+                                 <center>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button fx:id="btnCrearProductoEmpre" maxHeight="40.0" maxWidth="300.0" mnemonicParsing="false" onAction="#crearProductosEmpresarial" text="Crear producto" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="100.0" top="20.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnEliminarProductoEmpre" layoutX="110.0" layoutY="30.0" maxHeight="40.0" maxWidth="300.0" mnemonicParsing="false" onAction="#eliminarProductosEmpresarial" text="Eliminar producto" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="100.0" top="30.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnReemplazarProductoEmpre" layoutX="110.0" layoutY="85.0" maxHeight="40.0" maxWidth="300.0" mnemonicParsing="false" onAction="#reemplazarProductoEmpre" text="Reemplazar producto" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="100.0" top="30.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </center>
+                              </BorderPane>
+                           </children></Pane>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+package clases;
+
+public class Reporte {
+	
+	private Estudiante estudianteFacturas;
+	
+	public Reporte(Estudiante estudianteFacturas, double dinero, double sueldoEmpleado1, double sueldoEmpleado2, double sueldoEmpleado3) {
+		
+	}
+}

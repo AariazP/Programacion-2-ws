@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controller.ComprarProductosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="561.0" stroke="BLACK" strokeType="INSIDE" width="496.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.36690646409988403" blue="0.11999999731779099" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.21940720081329346" green="0.06859999895095825" blue="0.9800000190734863" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="178.0" layoutY="23.0" text="Realizar transacción" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="394.0" layoutX="101.0" layoutY="58.0" startX="-100.0" />
+      <TableView fx:id="tblProd" layoutX="14.0" layoutY="73.0" prefHeight="263.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="colNomProd" prefWidth="227.0" text="Productos" />
+          <TableColumn fx:id="colSubTotal" prefWidth="238.0" text="SubTotal" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnPagar" layoutX="398.0" layoutY="509.0" mnemonicParsing="false" onAction="#realizarTransaccion" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-border-radius: 10;" text="Pagar" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line endX="403.0" layoutX="93.0" layoutY="491.0" startX="-100.0" />
+      <HBox layoutX="83.0" layoutY="358.0" prefHeight="100.0" prefWidth="378.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="190.0">
+               <children>
+                  <Label text="Tipo de pago" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="Sede" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="41.0" text="Fecha" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="190.0">
+               <children>
+                  <ComboBox fx:id="cmbBoxTipoPago" prefWidth="150.0" promptText="Seleccione el pago" style="-fx-background-color: White;" />
+                  <ComboBox fx:id="cmbBoxSedes" layoutX="10.0" layoutY="10.0" prefWidth="150.0" promptText="Seleccione al sede" style="-fx-background-color: White;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="txtFechaFactura" prefHeight="25.0" prefWidth="146.0" promptText="Ingrese la fecha de hoy">
+                     <VBox.margin>
+                        <Insets right="38.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

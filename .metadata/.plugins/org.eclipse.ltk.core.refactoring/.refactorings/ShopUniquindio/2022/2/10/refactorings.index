@@ -1,0 +1,19 @@
+1645924575786	Rename package 'principal'
+1645967984742	Rename package 'principal1'
+1645976724342	Rename package 'principal'
+1645979602920	Rename type 'ControladorNuevoEmpleado'
+1645980486369	Rename package 'principal1'
+1645981478667	Rename type 'Productos'
+1645982102145	Encapsulate field 'cantFacturas'
+1645983035911	Encapsulate field 'unidades'
+1645983053681	Encapsulate field 'producto3'
+1645983062241	Encapsulate field 'producto2'
+1645983069965	Encapsulate field 'producto1'
+1645983095597	Encapsulate field 'codigo'
+1645983222843	Encapsulate field 'valorProducto'
+1645983481027	Rename compilation unit 'Reportes.java'
+1645983833940	Delete element
+1645991771249	Rename package 'principal'
+1645991850947	Move file
+1645991884692	Move compilation unit
+1645992736757	Rename package 'principal1'

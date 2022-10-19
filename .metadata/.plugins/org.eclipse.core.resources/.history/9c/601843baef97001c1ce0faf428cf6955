@@ -1,0 +1,6 @@
+package clases;
+
+public class Producto {
+	 private String codigo, nombre, 
+	 private int cntFact;
+}

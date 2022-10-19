@@ -1,0 +1,48 @@
+package clases;
+
+public class Empleado {
+	private String nombre, id, codigo, anios;
+	private int cantFacturas;
+
+	public Empleado(String nombre, String id, String codigo, String anios) {
+		this.nombre = nombre;
+		this.id = id;
+		this.codigo = codigo;
+		this.anios = anios;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getAnios() {
+		return anios;
+	}
+
+	public void setAnios(String anios) {
+		this.anios = anios;
+	}
+	
+	
+	
+}

@@ -1,0 +1,43 @@
+package clases;
+
+public class Producto {
+	 private String codigo = "PPP", nombre; 
+	 private int cntFact;
+	 private static int vlrEstatico = 1; 
+
+	 /**
+	 * @param codigo
+	 * @param nombre
+	 * @param cntFact
+	 */
+	public Producto( String nombre, int cntFact) {
+		this.codigo = codigo+vlrEstatico;
+		this.nombre = nombre;
+		this.cntFact = cntFact;
+		vlrEstatico ++;
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getCntFact() {
+		return cntFact;
+	}
+
+	public void setCntFact(int cntFact) {
+		this.cntFact = cntFact;
+	}
+}

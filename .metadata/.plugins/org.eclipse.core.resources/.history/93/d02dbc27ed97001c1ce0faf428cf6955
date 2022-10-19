@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal1.ControladorVentana2">
+   <children>
+      <QuadCurve controlX="5.0" controlY="-10.0" endX="-56.0" endY="112.0" fill="#4c9043" layoutX="156.0" layoutY="137.0" startX="-56.0" startY="-73.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Rectangle fill="#4c9043" height="75.0" layoutY="-2.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4c9043" height="329.0" layoutY="71.0" stroke="TRANSPARENT" strokeType="INSIDE" width="107.0" />
+    <Button id="glass" fx:id="btnNewEmpleado" layoutX="9.0" layoutY="96.0" mnemonicParsing="false" onAction="#visibilarBotonesNuevoEmpleado" stylesheets="file:/C:/Users/Alejandro/Downloads/stylesheet.css" text="Nuevo empleado">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="16.0" prefHeight="40.0" prefWidth="298.0" text="Tienda Uniquindio" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="20.0" left="50.0" right="20.0" top="60.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button id="glass" fx:id="btnNewStudnt" layoutX="8.0" layoutY="150.0" mnemonicParsing="false" stylesheets="file:/C:/Users/Alejandro/Downloads/stylesheet.css" text="Nuevo estudiante">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button id="glass" fx:id="btnAdmProduct" layoutX="7.0" layoutY="200.0" mnemonicParsing="false" stylesheets="file:/C:/Users/Alejandro/Downloads/stylesheet.css" text="Adm Producto">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button id="glass" fx:id="btnAdmFact" layoutX="8.0" layoutY="249.0" mnemonicParsing="false" stylesheets="file:/C:/Users/Alejandro/Downloads/stylesheet.css" text="Adm Factura">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button id="glass" fx:id="btnReport" layoutX="8.0" layoutY="299.0" mnemonicParsing="false" stylesheets="file:/C:/Users/Alejandro/Downloads/stylesheet.css" text="Reportes">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Avatar layoutX="493.0" layoutY="3.0" radius="35.0">
+         <image>
+            <Image url="@../../../../../../Downloads/uniquindioLogo.png" />
+         </image>
+      </Avatar>
+      <Label fx:id="lblTituloEmpleado" layoutX="153.0" layoutY="87.0" text="Nuevo empelado" visible="false" />
+      <Label fx:id="lblNombreEmpleado" layoutX="153.0" layoutY="141.0" text="Nombre" visible="false" />
+      <TextField fx:id="txtAreaNewEmpleado" layoutX="236.0" layoutY="128.0" visible="false" />
+      <Label fx:id="lblIdenticacionNewEmpleado" layoutX="153.0" layoutY="191.0" text="Identificación" visible="false" />
+      <Line fx:id="lnlLinea" endX="134.0" layoutX="254.0" layoutY="154.0" startX="-18.0" visible="false" />
+      <TextField fx:id="txtAreaIdentifcacionNewEmpleado" layoutX="254.0" layoutY="188.0" visible="false" />
+      <Label fx:id="lblCodigoNewEmpelado" layoutX="153.0" layoutY="241.0" text="codigo" visible="false" />
+      <TextField fx:id="txtAreaCodigoNewEmpleado" layoutX="256.0" layoutY="237.0" visible="false" />
+      <TextField fx:id="txtAniosTrabajosNewEmpleados" layoutX="249.0" layoutY="279.0" visible="false" />
+      <Label fx:id="lblAniosTrabajados" layoutX="127.0" layoutY="290.0" prefHeight="18.0" prefWidth="107.0" text="Años Trabajados" visible="false" />
+   </children>
+</AnchorPane>

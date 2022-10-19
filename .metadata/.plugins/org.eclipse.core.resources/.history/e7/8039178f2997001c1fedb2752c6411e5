@@ -1,0 +1,12 @@
+package view;
+import javafx.event.ActionEvent;
+import javafx.fxml.*;
+public class ControladorVentana2 {
+	
+	@FXML
+	
+	public void usuario (ActionEvent e) {
+		
+	}
+	
+}

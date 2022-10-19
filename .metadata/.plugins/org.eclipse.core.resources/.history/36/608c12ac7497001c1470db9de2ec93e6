@@ -1,0 +1,18 @@
+package principal1;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+
+public class ControladorVentana1 {
+	
+	@FXML
+	private TextField txtUsuario;
+	private PasswordField psswrdContrasenia = new PasswordField();
+	
+	public void getTxtUsuario (ActionEvent e) {
+		System.out.println(txtUsuario.getText());
+		System.out.println(psswrdContrasenia.getText());
+	}
+}

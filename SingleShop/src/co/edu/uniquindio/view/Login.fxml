@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controller.ControllerLogin">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="611.0" layoutY="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1000.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.33175355450236965" startX="0.6919431279620853">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.33528265357017517" green="0.47888240218162537" blue="0.8421052694320679" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8684210777282715" green="0.23720760643482208" blue="0.8684210777282715" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Rectangle>
+      <ImageView fitHeight="296.0" fitWidth="304.0" layoutX="-3.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ramas.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="474.0" layoutY="43.0" prefHeight="363.0" prefWidth="382.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+         <children>
+            <VBox layoutY="25.0" prefHeight="374.0" prefWidth="383.0">
+               <children>
+                  <Label text="Iniciar sesión">
+                     <font>
+                        <Font name="Book Antiqua" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="120.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Usuario:">
+                     <font>
+                        <Font name="Book Antiqua" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtUsuario" promptText="sign in" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 4;">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label layoutX="30.0" layoutY="76.0" text="Contraseña:">
+                     <font>
+                        <Font name="Book Antiqua" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="txtContraseña" promptText="Password" style="-fx-background-color: White; -fx-border-color: Black; -fx-border-radius: 4;">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button fx:id="btnIniciarSesion" mnemonicParsing="false" onAction="#actions" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #6AB8F2; -fx-background-radius: 10;" text="Iniciar sesión" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="110.0" top="50.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="268.0" prefWidth="296.0">
+         <top>
+            <Label text="Tienda Quindío" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Georgia" size="33.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="20.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="155.0" text="Michael Aristizabal" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="60.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="50.0" prefHeight="21.0" prefWidth="155.0" text="Alejandro Arias" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="71.0" prefHeight="21.0" prefWidth="155.0" text="Miguel Angel" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Line endX="195.5" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+      <Button fx:id="btnIniciarSesionAdmin" layoutX="738.0" layoutY="524.0" mnemonicParsing="false" onAction="#actions" prefHeight="36.0" prefWidth="213.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-background-radius: 10; -fx-border-radius: 10;" text="Iniciar sesión como admin" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExit" layoutX="943.0" layoutY="-3.0" mnemonicParsing="false" onAction="#actions" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #FF0202; -fx-border-color: #FF0202; -fx-background-radius: 10; -fx-border-radius: 10;" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCrearUsuario" layoutX="375.0" layoutY="524.0" mnemonicParsing="false" onAction="#actions" prefHeight="36.0" prefWidth="213.0" style="-fx-background-color: Transparent; -fx-border-color: White; -fx-background-radius: 10; -fx-border-radius: 10;" text="Crear una cuenta" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
